@@ -7,6 +7,7 @@ const ClientSchema = new moongose.Schema({
 
   email: {
     type: String,
+    unique: true,
   },
 
   phone: {
