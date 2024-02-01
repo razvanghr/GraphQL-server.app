@@ -6,11 +6,11 @@ const {
   GraphQLNonNull,
 } = require("graphql");
 
-const Client = require("../model/Client");
-const Project = require("../model/Project");
+const Client = require("../Model/Client");
+const Project = require("../Model/ProjectSchema");
 
-const ClientType = require("../schema/client.graphql");
-const ProjectType = require("../schema/project.graphql");
+const ClientType = require("./client.graphql");
+const ProjectType = require("./project.graphql");
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
