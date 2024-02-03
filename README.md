@@ -4,17 +4,13 @@
 
 ### App Url
 ```
-http://localhost:8080/graphql?
+http://localhost:8080/graphql
 ```
 
 
 ## Instalation
 ```
-git clone "url"
-```
-
-```
-example id = 65bbbc22ece69a3859ecfaea
+docker compose up --build
 ```
 
 ## GraphQL - Query
