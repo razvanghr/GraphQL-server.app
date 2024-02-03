@@ -3,7 +3,7 @@ const { graphqlHTTP } = require("express-graphql");
 const cors = require("cors");
 const database = require("./connection/dbConnection");
 const schema = require("./schema/schema");
-
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Connect to MongoDb
@@ -19,6 +19,6 @@ app.use(
   })
 );
 
-app.listen(8080, () => {
-  console.log("App running on port 8080");
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}`);
 });
